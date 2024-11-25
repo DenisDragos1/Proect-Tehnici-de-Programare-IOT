@@ -3,7 +3,7 @@ import time
 import random
 import requests
 
-SERVER_URL = "https://proect-tehnici-de-programare-iot.onrender/update-data"
+SERVER_URL = "https://proect-tehnici-de-programare-iot.onrender.com/update-data"
 
 def generate_sensor_data():
     data = {

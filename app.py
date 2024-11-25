@@ -3,6 +3,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
+@app.route("/update-data", methods=["POST"])
+def update_data():
+    data = request.json
+    # Procesare logică a datelor...
+    print("Data received:", data)
+    return jsonify({"message": "Data updated successfully"}), 200
+
 @app.route("/")
 def home():
     return "Hello, Flask is running in the cloud!"
